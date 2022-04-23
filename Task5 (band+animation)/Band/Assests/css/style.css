@@ -1,57 +1,85 @@
-*{
-    padding: 0;
-    margin: 0;
+
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
-
-.navigation{
+  
+.navigation {
     position: fixed;
+     width: 100%; 
+    left: 0;
     top: 0;
-    display: flex;
-    background-color: black;
-    text-align: center;
-    width: 100%;
     z-index: 1;
 }
-.navigation ul{
-    display: inline-flex;
-    list-style-type: none;
+.navigation ul {
+    display: flex;
+    background-color: black;
+    padding-left: 1rem;
 }
-.navigation ul li{
-    width: 100px;
-    padding: 14px;
+.navigation ul li {
+    list-style: none;
+    padding: 1.2rem;
 }
-.navigation ul li a{
+.navigation ul li:hover {
+    background-color: #CCCCCC;
+}
+.navigation ul li a {
     text-decoration: none;
-   color: white;
-} 
-.navigation ul li a:hover{
-   color: black;
+    text-transform: uppercase;
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    color: white;
 }
-
-.navigation ul li:hover{
-background-color: #CCCCCC;
-     
-}
-
-.search{
+.fa-magnifying-glass {
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-left: 950px;
-    padding: 14px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: white;
+    margin-top: 15px;
 }
-.search:hover{
+.fa-bars{
+ display: none;
+}
+
+ul .search {
+display: inline-block;
+margin-left: 500px
+}
+ul .search:hover{
     background-color: red;
-    padding: 14px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: white;
-    
 }
+  
+.more .sub {
+position: relative;
+display: none;
+position: absolute;
+color:black;
+left: 2px;
+top: 57px;
+padding: 0;
+}
+.more {
+position: relative;
+}
+.more:hover .sub {
+display: block;
+color: black;
+}
+.sub li a {
+color: black;
+font-size: 1.3rem;
+}
+.a_color {
+background-color:black;
+}
+  
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
 .welovemusic{
@@ -174,68 +202,68 @@ background-color: #CCCCCC;
     color: black;
 }
 /* ---------------------------------------------------------- */
-.contact{
-    text-align: center;
-   height: 500px;
+.contact {
+    padding-top: 20px;
+  }
+  
+.contact h3,h4 {
+    margin-left: 350px;
+    font-weight: normal;
 }
-.cont1{
-    width:800px;
-    margin-top: 40px;
-    height: 400px;
-    margin:0 auto;
+.contact h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.clas-h4 {
+    font-size: 1.1rem;
+    color: #666;
+    padding: 1.7rem;
+    font-style: italic;
+  }
+.contact .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.up{
-    width: 100%;
-    height: 40px;
-    margin-top: 80px;
-    font-size: 25px;
-}
-.up2{
-    width: 100%;
-    height: 40px;
-}
-.left{
-    text-align: center;
-    margin-top: 10px;
-    height: 70px;
+  }
+.container .address {
+    flex: 1;
     font-size: 20px;
-    text-align: left;
-    margin-left: 20px;
-}
-.right{
-    display: flex;
-    margin-top: 20px;
-    width: 500px;
-    height: 70px;
-    background-color: yellow;
-}
-.txt ,.msg{
-    padding: 6px;
-}
-.txt{
-}
-.msg{
-    flex-wrap: wrap;
-    width: 20%;
-    
-}
-.send{
-    position: absolute;
+    color: #444;
+  }
+.container .form {
+    flex: 1;
+  }
+.address i {
+    padding: 5px;
+  }
+  
+.form input[type="text"]:nth-child(n) {
+    font-size: 1.1rem;
     padding: 10px;
-    background-color: black;
+    border: 1px solid #ccc;
+  }
+.form input[type="text"]:nth-child(1),
+.form input[type="text"]:nth-child(2) {
+    width: 340px;
+  }
+.form input[type="text"]:nth-child(3) {
+    width: 680px;
+    margin-top: 0.4rem;
+  }
+.form a {
+    font-size: 15px;
     text-decoration: none;
+    display: block;
+    background-color: black;
+    padding: 0.4rem 1rem;
     color: white;
-    height: 40px;
-   margin-top: 350px;
-   margin-left: 745px;
-}
-.send:hover{
-    background-color: #CCCCCC;
-    color: black;
-}
+    width: 70px;
+    margin-left: 650px;
+    margin-top: 5px;
+  }
+.contact {
+    padding-bottom: 7rem;
+    margin-left: 330px;
+  }
 /* --------------------------------------------------------------------------- */
 .map{
     width: 100%;

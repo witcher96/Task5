@@ -18,20 +18,25 @@
     <header>
         <nav class="navigation">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#tour">TOUR</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#band">BAND</a></li>
-                <li><a href="#" class="more ">MORE</a>
-                 <!-- <ul class="submenu">
-                         <li><a href="">MERCHANDISE</a></li>
-                         <li><a href="">EXTRA</a></li>
-                         <li><a href="">MEDIA</a></li>
-                 </ul> -->
-                 </li>
-             </ul>
-             <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </nav>
+              <li><a href="#">Home</a></li>
+              <li><a href="#band">Band</a></li>
+              <li><a href="#tour">Tour</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="more">
+                <a href="#">More<i class="fa-solid fa-caret-down" style="margin-left: 2px;"></i></a>
+                <ul class="sub">
+                  <li class="a_color"><a href="#">Merchandise</a></li>
+                  <li class="a_color"><a href="#">Extras</a></li>
+                  <li class="a_color"><a href="#">Media</a></li>
+                </ul>
+              </li>
+      
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <li class="search"><a href="#"></a></li>
+      
+              <li class="hamburger"><a href="#"><i class="fa fa-bars" ></i></a></li>
+            </ul>
+          </nav>
         <div class="slider"></div> 
     </header>
 <!-- -----------------------------------------------------BAND------------------------------------------- -->
@@ -100,32 +105,26 @@
              </div>
         </div>
 <!-- ---------------------------------------------------------CONTACT------------------------------------------------------- -->
-        <div class="contact" id="contact">
-
-                <div class="cont1">
-                    <div class="up"><h3>CONTACT</h3></div>
-                    <div class="up2"><i class="dropnote">Fan? Drop a note!</i></div>
-                    <div class="left">
-                            <span><i class="fa-solid fa-location-dot"></i> Chicago, US</span>
-                            <br>
-                            <span><i class="fa-solid fa-phone"></i> Phone: +00 151515</span>
-                            <br>
-                            <span><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</span>
-                    </div>
-                    <div class="right">
-                        <label for="">
-                            <input type="text" placeholder="Name" class="txt" >
-                        </label>
-                        <label for="">
-                            <input type="mail" placeholder="Email" class="txt">
-                        </label>
-                        <label for="">
-                            <input type="text" placeholder="Message" class="msg">
-                        </label>
-                    </div>
-                    <a href="" class="send">SEND</a>
-                </div>
-        </div> 
+<div class="contact center" id="contact">
+    <h3>CONTACT</h3>
+    <h4 class="clas-h4">Fan?Drop a note!</h4>
+    <div class="container">
+      <div class="address">
+        <i class="fa fa-map-marker" style="width: 30px"> </i> Chicago, US
+        <br />
+        <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515
+        <br />
+        <i class="fa fa-envelope" style="width: 30px"> </i> Email:
+        mail@mail.com <br />
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Message" />
+        <a href="#">SEND</a>
+      </div>
+    </div>
+  </div>
 <!-- -------------------------------------------------------------------MAP-------------------------------------------------------- -->
         <div>
             <img src="./Assests/img/map.jpg" alt="" class="map">
