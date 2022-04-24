@@ -10,22 +10,23 @@ body{
   
 .navigation {
     position: fixed;
-     width: 100%; 
+    width: 100%; 
     left: 0;
     top: 0;
     z-index: 1;
 }
+
 .navigation ul {
     display: flex;
     background-color: black;
-    padding-left: 1rem;
+    padding-left: 6px;
 }
 .navigation ul li {
     list-style: none;
     padding: 1.2rem;
 }
 .navigation ul li:hover {
-    background-color: #CCCCCC;
+    background-color: #C9C9C9;
 }
 .navigation ul li a {
     text-decoration: none;
@@ -65,10 +66,23 @@ left: 2px;
 top: 57px;
 padding: 0;
 }
+.slider{
+    position: relative;
+    width: 100%;
+    background-size:contain ;
+}
+.sliderdiv{
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    color: white;
+    text-align: center;
+}
 .more {
 position: relative;
 }
 .more:hover .sub {
+margin-left: -2px;
 display: block;
 color: black;
 }
@@ -77,74 +91,77 @@ color: black;
 font-size: 1.3rem;
 }
 .a_color {
-background-color:black;
+background-color:white;
 }
-  
 
-/* ---------------------------------------------------------------------------------------------------------------------- */
+.slider{
+    width: 100%;
+}
+
+/* ----------------------------------------------BAND------------------------------------------------------------------------ */
 .welovemusic{
-    position: absolute;
-    top: 115%;
-    left: 300px;
+    margin: 0 auto;
     width: 60%;
-    height: 550px;
     text-align: center;
-    line-height: 2;
+    line-height: 2.5;
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
 }
 .pictures{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
-.pic{
-   margin-top: 20px;
-    width: 200px;
-    border-radius: 3px;
-    padding: 0 30px;
-}
-.name{
-    margin-top: 150px;
-}
-.names span{
-    padding: 0 80px ;
-    top: 50px;
 
+.pic{
+   width: 150px;
+   border-radius: 3px;
 }
-/* ------------------------------------------------------------------------------------------ */
+
+/* --------------------------------------TOUR---------------------------------------------------- */
 
 .tour{
-    position: relative;
-    margin-top: 500px;
     width: 100%;
-    height: 780px;
     background-color: black;
     text-align: center;
+    align-items: center;
     
 }
 .td{
-    position: absolute;
     font-size: 35px;
     margin-top: 100px;
-    margin-left: 650px;
     color: white;
+}
+.texts{
+    text-align: center;
+    line-height: 2;
 }
 .rmr{
     color: gray;
-    position: absolute;
     font-size: 20px;
-    margin-top: 170px;
-    left: 630px;
+    margin-top: 20px;
+}
+
+/* -----------------------------------DONE----------------------------------- */
+.month{
+    margin-top: 20px;
+    justify-content: center;
+    background-color: black;
+    margin: 0 auto;
     
 }
-.month{
-    position: absolute;
-    top: 1650px;
-    left: 360px;
-    width: 800px;
-    background-color: white;
-}
 .row{
-    border: 1px solid rgb(183, 179, 179); 
+    border: 1px solid rgb(183, 179, 179);
+    background-color: white; 
     padding: 8px;
     color: gray;
+    width: 52%;
+    text-align: left;
+    margin: 0 auto;
 }
 .sold{
     padding: 4px;
@@ -153,30 +170,33 @@ background-color:black;
     margin-left: 20px;
 }
 .circle{
+    position: relative;
     border-radius: 50%;
     background-color: black;
     color: white;
-    margin-left: 680px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
 }
 .cities{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 1790px;
-    width: 800px;
-    height: 350px;
-    left: 360px;
-    justify-content: space-between;
+    line-height: 1.8;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
 }
 .city{
     width: 250px;
-    height: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     background-color: white;
+    height: 330px;
+    text-align: start;
 }
 .ny{
     width: 250px;
@@ -188,82 +208,92 @@ background-color:black;
    opacity: 0.6;
 }
 .buy{
-    position: absolute;
     color: white;
     background-color: black;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
-    margin-left: 15px;
-    margin-top: 5px;
-    
+    margin-left: 20px;
+
 }
 .buy:hover{
     background-color: #CCCCCC;
     color: black;
 }
-/* ---------------------------------------------------------- */
+/* --------------------CONTACT-------------------------------------- */
 .contact {
-    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
   }
   
-.contact h3,h4 {
-    margin-left: 350px;
-    font-weight: normal;
-}
-.contact h3 {
+  .h2-last {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    text-align: center;
     font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-}
-.clas-h4 {
-    font-size: 1.1rem;
-    color: #666;
-    padding: 1.7rem;
-    font-style: italic;
-  }
-.contact .container {
-    display: flex;
-  }
-.container .address {
-    flex: 1;
-    font-size: 20px;
-    color: #444;
-  }
-.container .form {
-    flex: 1;
-  }
-.address i {
-    padding: 5px;
+    margin-top: 70px;
   }
   
-.form input[type="text"]:nth-child(n) {
-    font-size: 1.1rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-.form input[type="text"]:nth-child(1),
-.form input[type="text"]:nth-child(2) {
-    width: 340px;
-  }
-.form input[type="text"]:nth-child(3) {
-    width: 680px;
-    margin-top: 0.4rem;
-  }
-.form a {
+  .p-last {
     font-size: 15px;
-    text-decoration: none;
-    display: block;
-    background-color: black;
-    padding: 0.4rem 1rem;
+    line-height: 1.5;
+    opacity: 0.6;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .last-main-div {
+    display: flex;
+    width: 100%;
+    padding: 32px 0px;
+  }
+  
+  .last-main-second-div {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.2em;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .input-part {
+    width: 50%;
+  }
+  
+  .input-name-email {
+    width: 50%;
+    padding: 0px 8px;
+  }
+  
+  .name-email-style {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .input-message {
+    width: 100%;
+  }
+  
+  .button-send-div {
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0px;
+  }
+  
+  .send-btn {
+    padding: 8px 16px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
     color: white;
-    width: 70px;
-    margin-left: 650px;
-    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: black;
+    border: none;
   }
-.contact {
-    padding-bottom: 7rem;
-    margin-left: 330px;
-  }
+
 /* --------------------------------------------------------------------------- */
 .map{
     width: 100%;
@@ -271,39 +301,93 @@ background-color:black;
     opacity: 0.9;
 }
 /* ---------------------------------------------------------------------------- */
-footer{
+.container{
     width: 100%;
-    height: 220px;
-    display: flex;
+    height: 200px;
     background-color: #F7F7F7;
-    align-content: center;
+   
 }
 
 .socialmedia{
- height: 60px;
- width: 200px;
- display: flex;
- margin-left: 700px;
- margin-top: 80px;
- flex-wrap: wrap;
+ width: 100%;
+ text-align: center;
+ margin: 0 auto;
+
 }
 .socialmedia i{
     padding-left: 6px;
     font-size: 22px;
     color: gray;
-    height: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 80px;
+
 }
 .socialmedia p {
-   margin-left: 20px;
    color: gray;
+   
 }
-.socialmedia p a{
-    
-    color: gray;
- }
 .socialmedia i:hover{
     color: rgb(194, 191, 191);
 }
 .power{
-    display: flex;
-}
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ @media screen and (max-width: 600px) {
+    .navigation ul li:not(:first-child){
+         display: none;
+     }
+    .navigation ul li{
+        width: 100%;
+    }
+     .slider{
+         width: 100%;
+     }
+     .hamburger{
+         display: block;
+     }
+     .map{
+         width: 100%;
+     }
+     /* .pictures{
+         width: 100%;
+         flex-direction: column;
+     } */
+     .container{
+         width: 100%;
+     }
+     .container2{
+         display: flex;
+         flex-direction: column;
+     }
+     .cities{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         
+     }
+     .row{
+         width: 100%;
+     }
+     .fa-bars{
+         display: block;
+     }
+     
+     .last-main-div{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: left;
+     }
+     .fa-magnifying-glass{
+         display: none;
+     }
+     .sliderdiv{
+         display: block;
+     }
+    
+ }
+ 
